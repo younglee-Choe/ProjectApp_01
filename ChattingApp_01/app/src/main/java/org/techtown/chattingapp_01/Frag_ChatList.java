@@ -13,7 +13,6 @@ public class Frag_ChatList extends Fragment {
         return inflater.inflate(R.layout.frag_chatlist, container, false);
         ////
         //I'm YoungLee
+        //대대시 우예시
     }
 }
-//
-//
