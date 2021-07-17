@@ -12,5 +12,6 @@ public class Frag_ChatList extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.frag_chatlist, container, false);
         ////
+        //I'm YoungLee
     }
 }
