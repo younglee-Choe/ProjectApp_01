@@ -13,3 +13,4 @@ public class Frag_FriendList extends Fragment {
             return inflater.inflate(R.layout.frag_friendlist, container, false);
         }
 }
+
