@@ -23,4 +23,5 @@
         app:itemBackground="@color/black"
         app:itemIconTint="@color/green_200"
         app:menu="@menu/menu_bottom" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

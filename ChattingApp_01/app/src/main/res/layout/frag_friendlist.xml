@@ -39,7 +39,7 @@
         android:layout_marginRight="4dp"
         android:layout_marginBottom="4dp"
         app:cardBackgroundColor="@color/blue_100"
-        app:cardCornerRadius="@color/blue_500">
+        app:cardCornerRadius="20sp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -82,7 +82,8 @@
                 android:layout_marginBottom="10dp"
                 android:layout_gravity="center"
                 android:src="@drawable/btn_find"
-                android:background=""/>
+                android:background="@color/blue_100"
+                />
 
         </LinearLayout>
         </LinearLayout>

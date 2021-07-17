@@ -7,27 +7,27 @@
         app:showAsAction="ifRoom"
         android:enabled="true"
         android:icon="@drawable/friend"
-        android:title=""
+        android:title="friendList"
         />
     <item
         android:id="@+id/tab_chatlist"
         app:showAsAction="ifRoom"
         android:enabled="true"
         android:icon="@drawable/chatting"
-        android:title=""
+        android:title="chatList"
         />
     <item
         android:id="@+id/tab_chatbot"
         app:showAsAction="ifRoom"
         android:enabled="true"
         android:icon="@drawable/chatbot"
-        android:title=""
+        android:title="chatBot"
         />
     <item
         android:id="@+id/tab_setting"
         app:showAsAction="ifRoom"
         android:enabled="true"
         android:icon="@drawable/setting"
-        android:title=""
+        android:title="setting"
         />
 </menu>
