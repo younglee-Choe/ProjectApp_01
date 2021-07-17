@@ -7,27 +7,27 @@
         app:showAsAction="ifRoom"
         android:enabled="true"
         android:icon="@drawable/friend"
-        android:title="friendList"
+        android:title="친구 목록"
         />
     <item
         android:id="@+id/tab_chatlist"
         app:showAsAction="ifRoom"
         android:enabled="true"
         android:icon="@drawable/chatting"
-        android:title="chatList"
+        android:title="채팅방"
         />
     <item
         android:id="@+id/tab_chatbot"
         app:showAsAction="ifRoom"
         android:enabled="true"
         android:icon="@drawable/chatbot"
-        android:title="chatBot"
+        android:title="챗봇"
         />
     <item
         android:id="@+id/tab_setting"
         app:showAsAction="ifRoom"
         android:enabled="true"
         android:icon="@drawable/setting"
-        android:title="setting"
+        android:title="설정"
         />
 </menu>
