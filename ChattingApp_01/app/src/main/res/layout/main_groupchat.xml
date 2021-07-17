@@ -48,7 +48,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="단체 채팅방 Area"
+        android:text="단체 채팅방 Area "
         android:textSize="30sp"
         android:gravity="center"
         android:textColor="@color/dark_purple_A700">
