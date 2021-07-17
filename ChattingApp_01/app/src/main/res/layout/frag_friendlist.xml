@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="친구목록"
+            android:text="친구"
             android:textSize="30sp"
             android:textColor="@color/black"/>
         <ImageButton
@@ -81,7 +81,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:layout_gravity="center"
-                android:src="@drawable/find"
+                android:src="@drawable/btn_find"
                 android:background=""/>
 
         </LinearLayout>
