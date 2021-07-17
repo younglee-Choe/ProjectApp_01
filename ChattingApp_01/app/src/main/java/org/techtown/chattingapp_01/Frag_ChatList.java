@@ -14,5 +14,3 @@ public class Frag_ChatList extends Fragment {
     }
 }
 //
-//
-//
