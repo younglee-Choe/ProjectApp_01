@@ -45,14 +45,14 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="단체 채팅방 Area "
-        android:textSize="30sp"
-        android:gravity="center"
-        android:textColor="@color/dark_purple_A700">
 
-    </TextView>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
 
 </LinearLayout>
