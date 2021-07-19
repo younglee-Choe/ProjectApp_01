@@ -20,9 +20,8 @@
 
             <androidx.appcompat.widget.Toolbar
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="@color/light_blue_50"
-                tools:ignore="MissingConstraints">
+                android:layout_height="70dp"
+                android:background="@color/light_blue_50">
 
                 <ImageButton
                     android:layout_width="32dp"

@@ -3,7 +3,7 @@
     <style name="Theme.ChattingApp_01" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorPrimaryVariant">@color/light_blue_50</item>
         <item name="colorOnPrimary">@color/green_100</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
