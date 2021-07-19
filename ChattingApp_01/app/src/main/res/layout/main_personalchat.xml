@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:id="@+id/mainPersonalChat_layout">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -53,63 +53,40 @@
 
         </androidx.appcompat.widget.Toolbar>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_personalchat"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="16dp"
-            app:layout_constrainedHeight="true"
-            app:layout_constraintBottom_toTopOf="@+id/text_personalchat_indicator"
-            app:layout_constraintTop_toBottomOf="@+id/layout_personal_chat"
-            tools:ignore="UnknownId" />
-        <TextView
-            android:id="@+id/text_personalchat_indicator"
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="3dp" />
+
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:visibility="gone"
-            app:layout_constraintBottom_toTopOf="@id/view"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="16dp" />
-        <View
-            android:id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#e0e0e0"
-            app:layout_constraintBottom_toTopOf="@+id/layout_personalchat_chatbox" />
-        <RelativeLayout
-            android:id="@+id/layout_personalchat_chatbox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-            <EditText
-                android:layout_marginStart="16dp"
-                android:id="@+id/edit_perosnalchat_message"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toStartOf="@+id/button_personalchat_send"
-                android:background="@android:color/transparent"
-                android:hint="대화를 나눠 보세요."
-                android:inputType="text"
-                android:maxLines="6"
-                tools:ignore="Autofill,UnknownId"
-                android:layout_marginLeft="16dp"
-                android:layout_toLeftOf="@+id/button_personalchat_send" />
-            <Button
-                android:id="@+id/button_personalchat_send"
-                android:layout_width="64dp"
-                android:layout_height="48dp"
-                android:layout_alignParentEnd="true"
-                android:background="@color/blue_50"
-                android:text=" 보내기"
-                android:textColor="@color/black"
-                android:layout_alignParentRight="true" />
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/grey_400"
+            android:text="보내기"/>
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/white"
+            android:src="@drawable/btn_add" />
         </RelativeLayout>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
     <include
         layout="@layout/drawer_personalchat">
     </include>
