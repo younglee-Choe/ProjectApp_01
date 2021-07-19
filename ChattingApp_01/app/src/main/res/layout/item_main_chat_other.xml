@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="8dp"
-    android:layout_marginTop="16dp">
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="8dp">
 
     <TextView
         android:id="@+id/text_personalchat_date_other"
@@ -30,7 +31,8 @@
         android:layout_marginStart="16dp"
         android:contentDescription="User Icon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_personalchat_date_other" />
+        app:layout_constraintTop_toBottomOf="@+id/text_personalchat_date_other"
+        android:layout_marginLeft="16dp" />
 
     <TextView
         android:id="@+id/text_personalchat_user_other"
@@ -40,7 +42,8 @@
         android:text="John Grady Cole"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/image_personalchat_profile_other"
-        app:layout_constraintTop_toBottomOf="@+id/text_personalchat_date_other" />
+        app:layout_constraintTop_toBottomOf="@+id/text_personalchat_date_other"
+        android:layout_marginLeft="8dp" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_perosnalchat_message_other"
