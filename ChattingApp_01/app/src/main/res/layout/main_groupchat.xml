@@ -2,12 +2,11 @@
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:id="@+id/mainPersonalChat_layout">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -36,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:text="상대방 이름"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:textColor="@color/black"
                 android:layout_marginLeft="10dp"/>
 
@@ -53,10 +52,40 @@
 
         </androidx.appcompat.widget.Toolbar>
 
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="3dp" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/grey_400"
+            android:text="보내기"/>
 
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/white"
+            android:src="@drawable/btn_add" />
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
     <include
         layout="@layout/drawer_grouplchat">
     </include>
