@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -17,11 +18,11 @@
             <com.google.android.material.tabs.TabLayout
                 android:id="@id/tab_beginscr"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginTop="120dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="60dp"
                 android:background="@color/grey_400"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,7 +30,7 @@
                 android:id="@+id/container"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="200dp">
+                android:layout_marginTop="125dp">
 
             </FrameLayout>
 
