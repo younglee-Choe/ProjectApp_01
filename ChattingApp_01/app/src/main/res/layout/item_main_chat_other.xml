@@ -30,7 +30,8 @@
         android:layout_marginStart="16dp"
         android:contentDescription="User Icon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_personalchat_date_other" />
+        app:layout_constraintTop_toBottomOf="@+id/text_personalchat_date_other"
+        android:layout_marginLeft="16dp" />
 
     <TextView
         android:id="@+id/text_personalchat_user_other"

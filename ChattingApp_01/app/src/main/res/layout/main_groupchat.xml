@@ -50,14 +50,26 @@
                 android:layout_marginRight="20dp"
                 android:scaleType="centerInside" />
 
-
         </androidx.appcompat.widget.Toolbar>
-
-
-
-
     </androidx.appcompat.widget.LinearLayoutCompat>
+    
     <include
         layout="@layout/drawer_grouplchat">
     </include>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"/>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </androidx.drawerlayout.widget.DrawerLayout>
