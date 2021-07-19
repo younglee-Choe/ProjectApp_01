@@ -106,7 +106,6 @@
 
     </LinearLayout>
 
-
     <include
         layout="@layout/drawer_personalchat">
     </include>
