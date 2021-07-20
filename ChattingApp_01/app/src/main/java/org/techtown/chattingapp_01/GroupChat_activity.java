@@ -12,27 +12,27 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 public class GroupChat_activity extends AppCompatActivity {
 
-    private DrawerLayout mainPersonalChatLayout;
+    private DrawerLayout mainGroupChatLayout;
     private View drawerMenu;
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_personalchat);
+        setContentView(R.layout.main_groupchat);
 
-        mainPersonalChatLayout = findViewById(R.id.mainPersonalChat_layout);
+        mainGroupChatLayout = findViewById(R.id.mainGroupChat_layout);
         drawerMenu = findViewById(R.id.drawer_menu);
 
         ImageButton imgButton_menu = findViewById(R.id.imgButton_menu);
         imgButton_menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mainPersonalChatLayout.openDrawer(drawerMenu);
+                mainGroupChatLayout.openDrawer(drawerMenu);
             }
         });
 
-        mainPersonalChatLayout.setDrawerListener(drawerListener);
+        mainGroupChatLayout.setDrawerListener(drawerListener);
         drawerMenu.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
