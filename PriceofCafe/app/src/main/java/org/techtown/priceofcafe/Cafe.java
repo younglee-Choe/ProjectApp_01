@@ -4,7 +4,7 @@ public class Cafe {
     String name;
     String mobile;
 
-    public Cafe(String 이디야, String name) {
+    public Cafe(String name, String mobile) {
         this. name = name;
         this. mobile = mobile;
     }
