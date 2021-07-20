@@ -6,85 +6,103 @@
     android:orientation="vertical"
     android:id="@+id/mainPersonalChat_layout">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
 
-        <androidx.appcompat.widget.Toolbar
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/light_blue_50"
-            tools:ignore="MissingConstraints">
+            android:layout_height="0dp"
+            android:layout_weight="1.1">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/light_blue_50">
+
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/btn_back_32px"
+                    android:background="@color/light_blue_50" />
+
+                <ImageView
+                    android:id="@+id/imgButton_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/friend"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/otherPerson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="상대방 이름"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageButton
+                    android:id="@+id/imgButton_menu"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="#00000000"
+                    android:src="@drawable/btn_menu"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:scaleType="centerInside" />
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8.1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.8">
 
             <ImageButton
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:src="@drawable/btn_back_32px"
-                android:background="@color/light_blue_50" />
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/white"
+                android:src="@drawable/btn_add" />
 
-            <ImageView
-                android:id="@+id/imgButton_profile"
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp" />
+
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/friend"
-                android:layout_marginLeft="30dp"/>
+                android:background="@color/grey_400"
+                android:text="보내기"/>
 
-            <TextView
-                android:id="@+id/otherPerson"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:text="상대방 이름"
-                android:textSize="25sp"
-                android:textColor="@color/black"
-                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/imgButton_menu"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:background="#00000000"
-                android:src="@drawable/btn_menu"
-                android:layout_gravity="right"
-                android:layout_marginRight="20dp"
-                android:scaleType="centerInside" />
-
-
-        </androidx.appcompat.widget.Toolbar>
-
-        <EditText
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginBottom="3dp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="1dp"
-            android:layout_marginRight="1dp"
-            android:layout_marginBottom="3dp"
-            android:background="@color/grey_400"
-            android:text="보내기"/>
-
-        <ImageButton
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="11dp"
-            android:layout_marginLeft="11dp"
-            android:layout_marginBottom="3dp"
-            android:background="@color/white"
-            android:src="@drawable/btn_add" />
-
-    </RelativeLayout>
+    </LinearLayout>
 
     <include
         layout="@layout/drawer_grouplchat">
