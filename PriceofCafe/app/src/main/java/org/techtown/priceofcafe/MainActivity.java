@@ -12,6 +12,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ScrollView;
 
@@ -30,7 +31,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 //
 
-
 public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
@@ -40,8 +40,6 @@ public class MainActivity extends AppCompatActivity {
     Fragment3 fragment3;
     Fragment4 fragment4;
     Fragment5 fragment5;
-
-    ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,51 +101,38 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
 
-        listView = findViewById(R.id.listView);
-        ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        recyclerView.setLayoutManager(layoutManager);
+        CafeAdapter adapter = new CafeAdapter();
 
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("이디야");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("스타벅스");
-        listAdapter.add("이디야");
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이더야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("없디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+        adapter.addItem(new Cafe("이이야", "010-0000-0000"));
 
-        int totalHeight = 0;
 
-        for (int i = 0; i < listAdapter.getCount(); i++) {
-            View listItem = listAdapter.getView(i, null, listView);
-            listItem.measure(0, 0);
-            totalHeight += listItem.getMeasuredHeight();
-        }
+        recyclerView.setAdapter(adapter);
 
-        ViewGroup.LayoutParams params = listView.getLayoutParams();
-        params.height = totalHeight + (listView.getDividerHeight() * (listAdapter.getCount() - 1));
-        listView.setLayoutParams(params);
-        listView.setAdapter(listAdapter);
     }
 }
 
