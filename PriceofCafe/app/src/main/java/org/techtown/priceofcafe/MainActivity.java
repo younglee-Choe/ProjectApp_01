@@ -15,6 +15,7 @@ import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ScrollView;
+import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -27,6 +28,7 @@ import org.techtown.priceofcafe.Fragment5;
 import org.techtown.priceofcafe.R;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 //
@@ -101,44 +103,48 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        {RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        GridLayoutManager layoutManager = new GridLayoutManager(this,2);
+        recyclerView.setLayoutManager(layoutManager);
+        final CafeAdapter adapter = new CafeAdapter();
 
-            LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-            recyclerView.setLayoutManager(layoutManager);
-            CafeAdapter adapter = new CafeAdapter();
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("없디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("없디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("이디야",  "경북 경주시 어쩌구"));
+        adapter.addItem(new Cafe("살려줘..",  "경북 경주시 어쩌구"));
 
-            adapter.setOnItemClickListener(new CafeAdapter.OnItemClickListener() {
-                @Override
-                public void onItemClick(View v, int position) {
-
-                }
-            });
-
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이더야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("없디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-            adapter.addItem(new Cafe("이이야", "010-0000-0000"));
-
-            recyclerView.setAdapter(adapter);
-        }
+        recyclerView.setAdapter(adapter);
+        adapter.setOnItemClickListener(new OnCafeItemClickListener() {
+            @Override
+            public void onItemClick(CafeAdapter.ViewHolder holder, View view, int position) {
+                Cafe item = adapter.getItem(position);
+                Toast.makeText(getApplicationContext(), "이름 : " + item.getName(), Toast.LENGTH_LONG).show();
+            }
+        });
 
     }
 }

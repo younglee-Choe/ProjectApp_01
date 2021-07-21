@@ -1,27 +1,27 @@
 package org.techtown.priceofcafe;
 
 public class Cafe {
-    String name;
-    String mobile;
+    String Name;
+    String Notification;
 
-    public Cafe(String name, String mobile) {
-        this. name = name;
-        this. mobile = mobile;
+    public Cafe(String name, String notification) {
+        Name = name;
+        Notification = notification;
     }
 
     public String getName() {
-        return name;
+        return Name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        Name = name;
     }
 
-    public String getMobile() {
-        return mobile;
+    public String getNotification() {
+        return Notification;
     }
 
-    public void setMobile(String mobile) {
-        this.mobile = mobile;
+    public void setNotification(String notification) {
+        Notification = notification;
     }
 }

@@ -1,95 +1,86 @@
 package org.techtown.priceofcafe;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class CafeAdapter extends RecyclerView.Adapter<CafeAdapter.ViewHolder> {
+public class CafeAdapter extends RecyclerView.Adapter<CafeAdapter.ViewHolder> implements OnCafeItemClickListener{
     ArrayList<Cafe> items = new ArrayList<Cafe>();
+    OnCafeItemClickListener listener;
 
-    public interface OnItemClickListener {
-        void onItemClick(View v, int position);
-    }
-
-    private OnItemClickListener mListener = null;
-
-    public void setOnItemClickListener(OnItemClickListener listener) {
-        this.mListener = listener;
-    }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
-        View itemView = inflater.inflate(R.layout.cafe_item, viewGroup, false);
-
-        return new ViewHolder(itemView);
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View itemView = inflater.inflate(R.layout.cafe_item, parent, false);
+        return new ViewHolder(itemView, this);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Cafe item = items.get(position);
-        viewHolder.setItem(item);
+        holder.setItem(item);
     }
 
     @Override
     public int getItemCount() {
         return items.size();
     }
-
-    public void addItem(Cafe item) {
+    public void addItem(Cafe item){
         items.add(item);
     }
-
-    public void setItems(ArrayList<Cafe> items) {
+    public void setItems(ArrayList<Cafe> items){
         this.items = items;
     }
-
-    public Cafe getItem(int position) {
+    public Cafe getItem(int position){
         return items.get(position);
     }
-
-    public void setItem(int position, Cafe item) {
-        items.set(position, item);
+    public void setItem(int position,Cafe item){
+        items.set(position,item);
     }
 
-    static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView textView;
-        TextView textView2;
+    @Override
+    public void onItemClick(ViewHolder holder, View view, int position) {
+        if(listener != null){
+            listener.onItemClick(holder, view, position);
+        }
+    }
+    public void setOnItemClickListener(OnCafeItemClickListener listener){
+        this.listener = listener;
+    }
 
-        public ViewHolder(View itemView) {
+    static class ViewHolder extends RecyclerView.ViewHolder{
+        TextView textName;
+        TextView textNote;
+
+        public ViewHolder(View itemView, final OnCafeItemClickListener listener){
             super(itemView);
+            textName = itemView.findViewById(R.id.textName);
+            textNote = itemView.findViewById(R.id.textNoti);
+
 
             itemView.setOnClickListener(new View.OnClickListener() {
-                public OnItemClickListener mListener;
-
                 @Override
-                public void onClick(View v) {
-                    int pos = getAdapterPosition();
-                    if (pos != RecyclerView.NO_POSITION) {
-                        if(mListener != null) {
-                            mListener.onItemClick(v, pos);
-                        }
+                public void onClick(View view) {
+                    int position = getAdapterPosition();
+                    if(listener != null){
+                        listener.onItemClick(ViewHolder.this, view,position);
                     }
                 }
             });
-
-            textView = itemView.findViewById(R.id.textView);
-            textView2 = itemView.findViewById(R.id.textView2);
         }
 
-        public void setItem(Cafe item) {
-            textView.setText(item.getName());
-            textView2.setText(item.getMobile());
+        public void setItem(Cafe item){
+            textNote.setText(item.getNotification());
+            textName.setText(item.getName());
         }
     }
 }
