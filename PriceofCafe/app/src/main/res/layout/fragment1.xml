@@ -1,37 +1,261 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="."
-        android:textSize="0.1sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:onClick="onButton4Clicked"
+                android:text="하삼동커피 경주협성휴포레점"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="핑거커피 용황점"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton5Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="봄봄(용황로7길 8)"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton24Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="카페봄봄 용강점"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton33Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="핑거커피 동천점"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton39Clicked"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFE4E1"
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"
+                android:text="이디야"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:topLeftRadius="50dp"
+                android:topRightRadius="50dp" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFE4E1"
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"
+                android:text="야"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:topLeftRadius="50dp"
+                android:topRightRadius="50dp" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFE4E1"
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"
+                android:text="이디야"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:topLeftRadius="50dp"
+                android:topRightRadius="50dp" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFE4E1"
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"
+                android:text="이디야"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:topLeftRadius="50dp"
+                android:topRightRadius="50dp" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFE4E1"
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"
+                android:text="이디야"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:topLeftRadius="50dp"
+                android:topRightRadius="50dp" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFE4E1"
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"
+                android:text="디야"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:topLeftRadius="50dp"
+                android:topRightRadius="50dp" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFE4E1"
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"
+                android:text="이디야"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:topLeftRadius="50dp"
+                android:topRightRadius="50dp" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFE4E1"
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"
+                android:text="이야"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:topLeftRadius="50dp"
+                android:topRightRadius="50dp" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFE4E1"
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"
+                android:text="이디야"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:topLeftRadius="50dp"
+                android:topRightRadius="50dp" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFE4E1"
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"
+                android:text="이디야"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:topLeftRadius="50dp"
+                android:topRightRadius="50dp" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFE4E1"
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"
+                android:text="야"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:topLeftRadius="50dp"
+                android:topRightRadius="50dp" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFE4E1"
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"
+                android:text="이야"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:topLeftRadius="50dp"
+                android:topRightRadius="50dp" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFE4E1"
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"
+                android:text="이디야"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:topLeftRadius="50dp"
+                android:topRightRadius="50dp" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFE4E1"
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"
+                android:text="이디야"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:topLeftRadius="50dp"
+                android:topRightRadius="50dp" />
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFE4E1"
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp"
+                android:text="디야"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:topLeftRadius="50dp"
+                android:topRightRadius="50dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
