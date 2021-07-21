@@ -101,39 +101,44 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        {RecyclerView recyclerView = findViewById(R.id.recyclerView);
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-        recyclerView.setLayoutManager(layoutManager);
-        CafeAdapter adapter = new CafeAdapter();
+            LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+            recyclerView.setLayoutManager(layoutManager);
+            CafeAdapter adapter = new CafeAdapter();
 
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이더야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("없디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이디야", "010-0000-0000"));
-        adapter.addItem(new Cafe("이이야", "010-0000-0000"));
+            adapter.setOnItemClickListener(new CafeAdapter.OnItemClickListener() {
+                @Override
+                public void onItemClick(View v, int position) {
 
+                }
+            });
 
-        recyclerView.setAdapter(adapter);
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이더야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("없디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이디야", "010-0000-0000"));
+            adapter.addItem(new Cafe("이이야", "010-0000-0000"));
+
+            recyclerView.setAdapter(adapter);
+        }
 
     }
 }
-
-
