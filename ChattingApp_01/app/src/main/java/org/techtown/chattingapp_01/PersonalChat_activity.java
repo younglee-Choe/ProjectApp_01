@@ -51,6 +51,8 @@ public class PersonalChat_activity extends AppCompatActivity {
             }
         });
 
+
+        // 아래 3줄은 firebase DB 테스트 용 코드
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("message");
 
