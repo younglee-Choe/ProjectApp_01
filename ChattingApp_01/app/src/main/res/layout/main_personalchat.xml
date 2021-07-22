@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/light_blue_50"
-            app:layout_constraintBottom_toTopOf="@+id/recyclerView_chat">
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
                 android:id="@+id/imgeButton_back"
@@ -55,44 +55,55 @@
         </androidx.appcompat.widget.Toolbar>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView_chat"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar"
-            />
+            android:id="@+id/personal_recyclerView_chat"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/under_menuBar"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-        <ImageButton
-            android:id="@+id/imageButton_add"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:background="@color/white"
-            android:src="@drawable/btn_add"
+
+        <LinearLayout
+            android:id="@+id/under_menuBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent">
 
-        <Button
-            android:id="@+id/button_send"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/grey_400"
-            android:text="보내기"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            />
+            <ImageButton
+                android:id="@+id/imageButton_add"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:src="@drawable/btn_add"
+                android:layout_weight="0.1"
+                />
 
-        <EditText
-            android:id="@+id/editText_input"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toStartOf="@+id/button_send"
-            app:layout_constraintStart_toEndOf="@+id/imageButton_add"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            <EditText
+                android:id="@+id/editText_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9.8"
+                />
+
+            <Button
+                android:id="@+id/button_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_400"
+                android:text="보내기"
+                android:layout_weight="0.1"/>
+
+            </LinearLayout>
+
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <include
         layout="@layout/drawer_personalchat">
     </include>
+
 </androidx.drawerlayout.widget.DrawerLayout>

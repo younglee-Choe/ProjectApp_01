@@ -5,22 +5,39 @@ import android.net.Uri;
 public class PersonalChatData {
     private String nickname;
     private String msg;
-    private String profile;
-    private String time;
+    // private String profile;
+    private long time;
 
-    public String getProfile() {
+    public PersonalChatData(String nickname, String msg, String profile, long time) {
+        this.nickname = nickname;
+        this.msg = msg;
+        // this.profile = profile;
+        this.time = time;
+    }
+
+    public PersonalChatData(String nickname, String msg) {
+        this.nickname = nickname;
+        this.msg = msg;
+    }
+
+    public PersonalChatData() {
+
+    }
+
+
+    /*public String getProfile() {
         return profile;
-    }
+    }*/
 
-    public void setProfile(String profile) {
+    /*public void setProfile(String profile) {
         this.profile = profile;
-    }
+    }*/
 
-    public String getTime() {
+    public long getTime() {
         return time;
     }
 
-    public void setTime(String time) {
+    public void setTime(long time) {
         this.time = time;
     }
 
