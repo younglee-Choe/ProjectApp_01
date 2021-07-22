@@ -342,37 +342,461 @@
                 android:layout_height="50dp"
                 app:backgroundTint="#FFFFFF"
                 android:background="@drawable/button_ui"
-                android:text="동구라미"
+                android:text="903커피"
                 android:textColor="#000000"
-                android:textSize="17sp" />
+                android:textSize="17sp"
+                android:onClick="onButton72Clicked"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 app:backgroundTint="#FFFFFF"
                 android:background="@drawable/button_ui"
-                android:text="동구라미"
+                android:text="카페 위스"
                 android:textColor="#000000"
-                android:textSize="17sp" />
+                android:textSize="17sp"
+                android:onClick="onButton75Clicked"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 app:backgroundTint="#FFFFFF"
                 android:background="@drawable/button_ui"
-                android:text="동구라미"
+                android:text="이코피코퍼레이션"
                 android:textColor="#000000"
-                android:textSize="17sp" />
+                android:textSize="17sp"
+                android:onClick="onButton79Clicked"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 app:backgroundTint="#FFFFFF"
                 android:background="@drawable/button_ui"
-                android:text="동구라미"
+                android:text="yesterday"
                 android:textColor="#000000"
-                android:textSize="17sp" />
-
+                android:textSize="17sp"
+                android:onClick="onButton85Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="캔모아 경주점"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton87Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="카페 프라하"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton92Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="르땅고뒤샤"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton94Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="에이에이에이"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton95Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="황오커피"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton96Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="황남원"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton101Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="느루더티라미수"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton121Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="르터틀"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton125Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="텐커피하우스"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton134Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="소나기"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton136Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="아르떼"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton137Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="벨렘351 황남점"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton140Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="카페 쉼표"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton145Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="코코몬"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton147Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="이디야커피 경주복군점"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton159Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="프랑제리 경주켄싱턴리조트점"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton164Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="카페 다온"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton166Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="이디야커피 경주입실점"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton169Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="이디야커피 경주외동공단점"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton170Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="카페로드"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton173Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="커피맘"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton177Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="더빈스커피"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton178Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="카페마실"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton179Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="S CAFE"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton180Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="커피하우스"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton183Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="포텐셜커피로스터스"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton184Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="하이드어웨이"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton185Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="킹스로드카페"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton188Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="카페플레이"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton190Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="카페왕릉"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton191Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="카페 라비"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton192Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="모카커피"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton199Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="첸카페_펜션"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton200Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="까페커피나무"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton201Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="소풍카페"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton202Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="테트라"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton203Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="카페 공감"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton204Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="화소담"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton212Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="파리바게뜨 경주양남점"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton214Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="CAFEYOY"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton215Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="카페양남"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton216Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="아날로그카페"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton221Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="아베크"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton222Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="산마루카페"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton223Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="카페 언제나"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton224Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="정아트커피"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton226Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="테라커피"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:onClick="onButton227Clicked"/>
 
         </LinearLayout>
-
     </ScrollView>
-
 </LinearLayout>

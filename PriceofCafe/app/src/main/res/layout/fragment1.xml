@@ -58,204 +58,34 @@
                 android:textColor="#000000"
                 android:textSize="17sp"
                 android:onClick="onButton39Clicked"/>
-
             <Button
-
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:backgroundTint="#FFE4E1"
-                android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"
-                android:text="이디야"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="더벤티 경주중앙점"
                 android:textColor="#000000"
                 android:textSize="17sp"
-                android:topLeftRadius="50dp"
-                android:topRightRadius="50dp" />
-
+                android:onClick="onButton88Clicked"/>
             <Button
-
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:backgroundTint="#FFE4E1"
-                android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"
-                android:text="야"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="나우커피 경주중앙점"
                 android:textColor="#000000"
                 android:textSize="17sp"
-                android:topLeftRadius="50dp"
-                android:topRightRadius="50dp" />
-
+                android:onClick="onButton97Clicked"/>
             <Button
-
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:backgroundTint="#FFE4E1"
-                android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"
-                android:text="이디야"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="인생커피"
                 android:textColor="#000000"
                 android:textSize="17sp"
-                android:topLeftRadius="50dp"
-                android:topRightRadius="50dp" />
-
-            <Button
-
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:backgroundTint="#FFE4E1"
-                android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"
-                android:text="이디야"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:topLeftRadius="50dp"
-                android:topRightRadius="50dp" />
-
-            <Button
-
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:backgroundTint="#FFE4E1"
-                android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"
-                android:text="이디야"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:topLeftRadius="50dp"
-                android:topRightRadius="50dp" />
-
-            <Button
-
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:backgroundTint="#FFE4E1"
-                android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"
-                android:text="디야"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:topLeftRadius="50dp"
-                android:topRightRadius="50dp" />
-
-            <Button
-
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:backgroundTint="#FFE4E1"
-                android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"
-                android:text="이디야"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:topLeftRadius="50dp"
-                android:topRightRadius="50dp" />
-
-            <Button
-
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:backgroundTint="#FFE4E1"
-                android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"
-                android:text="이야"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:topLeftRadius="50dp"
-                android:topRightRadius="50dp" />
-
-            <Button
-
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:backgroundTint="#FFE4E1"
-                android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"
-                android:text="이디야"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:topLeftRadius="50dp"
-                android:topRightRadius="50dp" />
-
-            <Button
-
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:backgroundTint="#FFE4E1"
-                android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"
-                android:text="이디야"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:topLeftRadius="50dp"
-                android:topRightRadius="50dp" />
-
-            <Button
-
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:backgroundTint="#FFE4E1"
-                android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"
-                android:text="야"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:topLeftRadius="50dp"
-                android:topRightRadius="50dp" />
-
-            <Button
-
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:backgroundTint="#FFE4E1"
-                android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"
-                android:text="이야"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:topLeftRadius="50dp"
-                android:topRightRadius="50dp" />
-
-            <Button
-
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:backgroundTint="#FFE4E1"
-                android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"
-                android:text="이디야"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:topLeftRadius="50dp"
-                android:topRightRadius="50dp" />
-
-            <Button
-
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:backgroundTint="#FFE4E1"
-                android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"
-                android:text="이디야"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:topLeftRadius="50dp"
-                android:topRightRadius="50dp" />
-
-            <Button
-
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:backgroundTint="#FFE4E1"
-                android:bottomLeftRadius="50dp"
-                android:bottomRightRadius="50dp"
-                android:text="디야"
-                android:textColor="#000000"
-                android:textSize="17sp"
-                android:topLeftRadius="50dp"
-                android:topRightRadius="50dp" />
+                android:onClick="onButton181Clicked"/>
 
         </LinearLayout>
-
     </ScrollView>
-
 </LinearLayout>
