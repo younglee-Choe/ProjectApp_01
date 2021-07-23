@@ -185,6 +185,25 @@
                 android:textColor="#000000"
                 android:textSize="17sp"
                 android:onClick="onButton175Clicked"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="경주타원 카페테리아"
+                android:onClick="onButton237Clicked"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:backgroundTint="#FFFFFF"
+                android:background="@drawable/button_ui"
+                android:text="배스킨라빈스"
+                android:onClick="onButton242Clicked"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
 
         </LinearLayout>
     </ScrollView>
