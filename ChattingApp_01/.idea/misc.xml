@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/GitHub/ProjectApp_01/ChattingApp_01/app/src/main/res/layout/frag_chatlist.xml" value="0.36614583333333334" />
+        <entry key="..\:/GitHub/ProjectApp_01/ChattingApp_01/app/src/main/res/layout/frag_main_login.xml" value="0.36614583333333334" />
+        <entry key="..\:/GitHub/ProjectApp_01/ChattingApp_01/app/src/main/res/layout/frag_setting.xml" value="0.36614583333333334" />
+        <entry key="..\:/GitHub/ProjectApp_01/ChattingApp_01/app/src/main/res/layout/item_chatlist.xml" value="0.36614583333333334" />
+        <entry key="..\:/GitHub/ProjectApp_01/ChattingApp_01/app/src/main/res/layout/item_drawer_groupchat.xml" value="0.36614583333333334" />
+        <entry key="..\:/GitHub/ProjectApp_01/ChattingApp_01/app/src/main/res/layout/item_friendlist.xml" value="0.36614583333333334" />
+        <entry key="..\:/GitHub/ProjectApp_01/ChattingApp_01/app/src/main/res/layout/item_main_chat_me.xml" value="0.36614583333333334" />
+        <entry key="..\:/GitHub/ProjectApp_01/ChattingApp_01/app/src/main/res/layout/item_main_chat_other.xml" value="0.36614583333333334" />
+        <entry key="..\:/GitHub/ProjectApp_01/ChattingApp_01/app/src/main/res/layout/item_main_gallery_me.xml" value="0.36614583333333334" />
+        <entry key="..\:/GitHub/ProjectApp_01/ChattingApp_01/app/src/main/res/layout/item_main_gallery_other.xml" value="0.36614583333333334" />
+        <entry key="..\:/GitHub/ProjectApp_01/ChattingApp_01/app/src/main/res/layout/main_beginscr.xml" value="0.36614583333333334" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
